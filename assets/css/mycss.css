@@ -1,0 +1,11 @@
+@media (max-width: 736px) {
+    #header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        max-width: 260px;
+        /* forces 3 buttons max per row */
+        margin: 0 auto;
+    }
+}
