@@ -6,8 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://joaonunovalente.com/</loc>
-  <lastmod>2025-11-30T18:06:13+00:00</lastmod>
+  <lastmod>2025-12-02T18:06:13+00:00</lastmod>
 </url>
 
+<url>
+  <loc>https://bio.joaonunovalente.com/</loc>
+  <lastmod>2025-12-03T18:06:13+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://phd.joaonunovalente.com/</loc>
+  <lastmod>2025-12-03T18:06:13+00:00</lastmod>
+</url>
 
 </urlset>
