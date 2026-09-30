@@ -2,6 +2,9 @@
 /// @param {string} $content Optional content value to use.
 /// @param {string} $category Optional category to use.
 /// @param {string} $where Optional pseudoelement to target (before or after).
+/// font-family and font-weight are deliberately not set here: Font Awesome
+/// applies both to the element itself (.fas, .fab, ...) and the ::before
+/// content inherits them. Declaring them here renders blank icons.
 @mixin icon($content: false, $category: regular, $where: before) {
 
 	text-decoration: none;
@@ -20,18 +23,6 @@
 		text-rendering: auto;
 		line-height: 1;
 		text-transform: none !important;
-
-		@if ($category == brands) {
-			font-family: 'Font Awesome 5 Brands';
-		}
-		@elseif ($category == solid) {
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 900;
-		}
-		@else {
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
 
 	}
 

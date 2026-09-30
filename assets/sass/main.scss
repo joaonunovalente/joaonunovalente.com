@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-// @import url("../fontawesome-all.min.css");
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css");
 
 
 // Breakpoints.
@@ -160,20 +160,13 @@
 		@include icon;
 		position: relative;
 
+		// Font Awesome 7 sizes icons to width:1.25em. The circle in
+		// #header nav a:before is wider than that, so it would overflow
+		// the link box and push every icon off-centre. Shrink-wrap instead.
+		width: auto;
+
 		> .label {
 			display: none;
-		}
-
-		&.solid {
-			&:before {
-				font-weight: 900;
-			}
-		}
-
-		&.brands {
-			&:before {
-				font-family: 'Font Awesome 5 Brands';
-			}
 		}
 	}
 
